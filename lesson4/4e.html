@@ -1,41 +1,43 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Basics</title>
-    <style>
+<style>
         .web_btn{
             background-color: rgb(10,102,194);
             color: white;
             font-weight: bold;
-            border-radius: 30px;
-            height:40px;
-            width:220px;
+            font-size:15px;
+            border-radius: 20px;
+            padding :10px 15px 10px 15px;
             border:none;
             margin-right: 10px;
             cursor:pointer;
+            /* transition:background-color 0.15s; */
+        }
+        .web_btn:active{
+            background-color: rgb(2,70,138);
+            border-width:0.15s;
         }
         .save_btn{
             background-color: white;
             color: rgb(10,102,194);
             border-color: rgb(10,102,194);
             border-radius: 20px;
-            height: 40px;
-            width:100px;
+            padding:10px 20px 10px 20px;
             border-style: solid;
+            border-width: 1px;
+            border-color: rgb(10,102,194);
             font-weight: bold;
             cursor:pointer;
+            transition: background-color 0.15s,border-width 0.15s;
             
         }
-    </style>
-</head>
-<body>
+        .save_btn:active{
+            background-color:rgb(226,240,254);
+            border-width:2px;
+        }
+</style>
+
     <button class="web_btn">
         Apply on company website
     </button>
     <button class="save_btn">
         Save
     </button>
-</body>
-</html>
